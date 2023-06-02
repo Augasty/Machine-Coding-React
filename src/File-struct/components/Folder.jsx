@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import "../styles.css"
+
 const Folder = ({ explorer, handleNode , id}) => {
 
   const [expand, setExpand] = useState(false)
@@ -34,7 +36,7 @@ const Folder = ({ explorer, handleNode , id}) => {
     return <div className='file'>
     <span>📄 {explorer.name}</span>
     <div>
-    <button onClick={(e) => handleDelete(e)}>🗑️</button>
+    <button className='button' onClick={(e) => handleDelete(e)}>🗑️</button>
     </div>
     </div>
   }
@@ -45,9 +47,9 @@ const Folder = ({ explorer, handleNode , id}) => {
         <div className='folder' onClick={() => setExpand(!expand)}>
           <span>📁 {explorer.name}</span>
           <div>
-            <button onClick={(e) => handleButtons(e, true)}>📁+</button>
-            <button onClick={(e) => handleButtons(e, false)}>📄+</button>
-            <button onClick={(e) => handleDelete(e)}>🗑️</button>
+            <button  className='button' onClick={(e) => handleButtons(e, true)}>📁+</button>
+            <button  className='button' onClick={(e) => handleButtons(e, false)}>📄+</button>
+            <button  className='button' onClick={(e) => handleDelete(e)}>🗑️</button>
 
           </div>
 

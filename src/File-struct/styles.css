@@ -33,9 +33,14 @@
     margin: 0 5px;
   }
   
-  button {
+  .button {
     font-size: 15px;
     background-color: white;
+  }
+  .Homebutton{
+      font-size: 15px;
+      background-color: rgb(255, 255, 255);
+      margin: 25px;
   }
   
   .file {
