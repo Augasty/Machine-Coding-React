@@ -3,18 +3,32 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div>            
-            <Link to="/file_structure">
+        <div>
+            <Link to="/file-structure">
                 <button type="button">
                     File_structure
                 </button></Link>
-                <Link to="/api_calling">
+            <Link to="/api-calling">
                 <button type="button">
                     API calling
                 </button>
-
             </Link>
 
+            <Link to="/debounce-search">
+                <button type="button">
+                    Debounce search
+                </button>
+            </Link>            
+            <Link to="/star-rating">
+                <button type="button">
+                    Star rating
+                </button>
+            </Link>
+            <Link to="/modal">
+                <button type="button">
+                    Goto Modal
+                </button>
+            </Link>
         </div>
     )
 }
