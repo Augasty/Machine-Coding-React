@@ -29,6 +29,11 @@ const Home = () => {
                     Goto Modal
                 </button>
             </Link>
+            <Link to="/forms">
+                <button type="button">
+                    Forms
+                </button>
+            </Link>
         </div>
     )
 }

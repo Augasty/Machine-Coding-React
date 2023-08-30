@@ -6,6 +6,7 @@ import APIApp from '../API-calling/APIApp'
 import Debounce from '../Debounce-search/Debounce'
 import Rating from '../Star-rating/Rating'
 import ModalHome from '../Modal/ModalHome'
+import Forms from '../Forms/Forms'
 
 const Routing = () => {
   return (
@@ -17,6 +18,7 @@ const Routing = () => {
         <Route path='/debounce-search' element={<Debounce/>} />
         <Route path='/star-rating' element={<Rating value={2}/>} />
         <Route path='/modal' element={<ModalHome/>} />
+        <Route path='/forms' element={<Forms/>} />
 
       <Route path='/' element={<Home />} />
       </Routes>
